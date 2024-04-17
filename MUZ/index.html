@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Народный музей "Освобождение Беларуси"</title>
     <style>
+        @font-face {
+            font-family: ""; 
+            src: url("C:\Users\37544\Documents\Fonts/PlayfairDisplay-Black.ttf") format("truetype"); 
+            font-style: normal; 
+            font-weight: normal; 
+        } 
        
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url("back.jpg");
             background-size: cover;
+        }
+        .block {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("back.jpg");
+            
+        }
+        .block main img {
+            text-align: center;
+            padding-top: 100px;
+        }
+        .block2 {
+            background-image: url("Rectangle25.png");
+            width: 900px;
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: PlayfairDisplay-Black;
+            justify-content: space-between;
+        }
+        .block2 h2{
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .hcon{
+            width: 600px; 
+            margin: 0 auto; 
         }
 
         header {
@@ -19,7 +49,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            
         }
 
         header img {
@@ -50,34 +79,165 @@
         }
 
         main h1 {
+            font-family: PlayfairDisplay-Black;
             font-size: 128px;
             margin-bottom: 20px;
         }
         main h2 {
+            font-family: PlayfairDisplay-Black;
             font-size: 64px;
             margin-bottom: 20px;
+        }
+        .block2 .hcon2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px; 
+        }
+
+        .block2 .hcon2 img {
+            max-width: 50%  ; 
+            height: auto;
+        }
+
+        .block2 .hcon2 h3 {
+            flex-grow: 1; 
+            margin-left: 20px; 
+        }
+
+        .oval-button {
+            background-color: #888888;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin: 0 216px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .exc {
+            text-align: center; /* Выравнивание по центру */
+        }
+
+        .excursions-text {
+            text-align: center; /* Убрать избыточные стили */
+            margin-top: 10px;
+        }
+
+        .excursions {
+            display: flex;
+            justify-content: center; /* Выравнивание кнопок по центру */
+            margin-top: 20px; /* Увеличить отступ сверху */
+        }
+
+        .excursions-text {
+            text-align: center;
+            font-size: 14px;
+            display: flex; /* добавлено */
+            justify-content: space-between; /* добавлено */
+        }
+
+        .excursions-text h2 {
+            padding-left: 230px;
+            font-family: PlayfairDisplay-Black;
+            font-size: 18px;
+            width: 400px; /* изменено */
+        }
+
+        .excursions-text h3 {
+            padding-right: 230px;
+            font-family: PlayfairDisplay-Black;
+            font-size: 18px;
+            width: 400px; /* изменено */
+        }
+        footer strong{
+            color: red;
+        }
+        footer a{
+            font-family: PlayfairDisplay-Black;
+            font-size: 18px;
+            color:black;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="Заголовок сайта.png" alt="Название музея">
-        <nav>
+    <div class="block">
+        <header>
+            <img src="web/Заголовок сайта.png" alt="Название музея">
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="muzey.html">О музее</a></li>
+                    <li><a href="12.html">Экспозиция</a></li>
+                    <li><a href="otz.html">Отзывы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Народный музей</h1>
+            <h2> "Освобождение Беларуси"</h2>
+            <img src= "web/Group 26.png"  alt="">
+        </main>
+    </div>
+    <div class="block2">
+        <div class="hcon">
+            <h3>Приветствуем Вас, уважаемые гости, в Народном музее. «Освобождение Беларуси» Гимназии No11 имени Ивана. Даниловича Черняховского. В нашем музее действует три постоянных раздела экспозиции, такие как «Минское подполье», «Иван Данилович Черняховский - командующий 3-м Белорусским фронтом», и «История гимназии No 11 г. Минска»</h3>
+        </div>
+        <b ><h2> Наш музей насчитывает 1919 экспонатов</h2></b>
+        <div class="hcon2">
+            <img src="web/PXL_20240416_100914683 1.png" >
+            <h3>В музее хранятся фрагменты минометного орудия которое использовалось при освобождении г. Минска</h3>
+        </div>
+        <div class="hcon2">
+            
+            <h3>В нашем музее стоит снаряд — молчаливый свидетель тех трагических и героических времен</h3>
+            <img src="web/PXL_20240416_100953169 1.png">
+        </div>
+        <div class="hcon2" style="background-color: brown;">
+            
+            
+            <img src="web/PXL_20240416_101214511 1.png">
+            <h3>Алтарь — это место, где совершаются священные таинства, и оно является духовным центром музея</h3>
+        </div>
+        </div>
+        <div class="exc">
+            <div class="excursions-text">
+                <h2>Приглашаем вас в уникальное путешествие по коридорам времени. Ощутите дух эпохи, познайте героизм и мужество наших предков</h2>
+                <h3>Наш музей насчитывает 1919 экспонатов, в том числе несколько достаточно редких</h3>
+            </div>
+            <div class="excursions">
+                <button class="oval-button">Заказать экскурсию</button>
+                <button class="oval-button">Уникальные экспонаты</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="background-image:url(web/Rectangle\ 22.png); padding: 20px; font-family: Arial, sans-serif;">
+        <div style="display: flex; justify-content: space-between;">
+          <div>
+            <strong>Связаться с нами</strong>
+                <h1>Email</h1>
+          </div>
+          <div>
+            <strong>Создание сайта</strong>
+            <p>Артём | Илья | Богдан</p>
+          </div>
+          <div>
+            <strong>Гимназия №11 г. Минска</strong>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О музее</a></li>
-                <li><a href="#">Экспозиция</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+              <li><a href="/about">Информационный сайт</a></li>
+              <li><a href="/edu_sites">Эл. сервис</li>
+              <li><a href="/projects">Telegram-канал</li>
+              <li><a href="/partners">Instagram</a></li>
+              <li><a href="/contacts">Контакты</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Народный музей</h1>
-        <h2>  "Освобождение Беларуси"</h2>
-
-    </main>
-    <footer>
-    </footer>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; color: #000000;">
+          <small>© 2024 Музей "Освобождение Беларуси”, находится в ГУО “Гимназия № 11 г. Минска имени И. Д. Черняховского"</small>
+        </div>
+      </footer>
 </body>
 </html>
